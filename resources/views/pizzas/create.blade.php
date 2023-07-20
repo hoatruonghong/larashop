@@ -5,7 +5,7 @@
 
     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
         <div class="title">
-        <h1>Delicious pizzas - {{ $id }}</h1>
+        <h1>Create new pizza</h1>
         </div>
             
     </div>
