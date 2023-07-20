@@ -9,6 +9,18 @@
         </div>
         <p>Type: {{$pizza->type}}</p>
         <p>Base: {{$pizza->base}}</p>
+        <p>Toppings:</p>
+        <ul>
+            @foreach($pizza->toppings as $topping)
+                <li>{{$topping}}</li>
+            @endforeach
+        </ul>
+        <form action="/pizzas/{{ $pizza->id }}" method="POST">
+            @csrf 
+            @method('DELETE')
+            <button>Complete Order</button>
+        </form>
+
         <br>
         <a href="/pizzas">All pizzas</a>
 

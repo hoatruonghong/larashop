@@ -29,6 +29,15 @@
 
             </select>
             <br>
+            <fieldset>
+                <label>Extra toppings:</label><br>
+                <input type="checkbox" name="toppings[]" value="mushrooms">Mushrooms <br>
+                <input type="checkbox" name="toppings[]" value="peppers">Peppers <br>
+                <input type="checkbox" name="toppings[]" value="garlic">Garlic <br>
+                <input type="checkbox" name="toppings[]" value="olives">Olives<br>
+            </fieldset>
+
+            <br>
             <button type="submit">Order Pizza</button>
         </form>  
     </div>
