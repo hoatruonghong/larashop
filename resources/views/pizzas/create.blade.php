@@ -7,7 +7,31 @@
         <div class="title">
         <h1>Create new pizza</h1>
         </div>
-            
+        <form action="/pizzas" method="POST">
+            @csrf
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="type">Choose pizza type</label>
+            <select name="type" id="type">
+                <option value="margarita">Margarita</option>
+                <option value="hawaiian">hawaiian</option>
+                <option value="veg supreme">Veg Supreme</option>
+                <option value="volcano">Volcano</option>
+
+            </select>
+            <br>
+            <select name="base" id="base">
+                <option value="cheesy crust">cheesy crust</option>
+                <option value="garlic crust">garlic crust</option>
+                <option value="thin & crispy">thin & crispy</option>
+                <option value="thick">thick</option>
+
+            </select>
+            <br>
+            <button type="submit">Order Pizza</button>
+        </form>  
     </div>
+    
 </div>
 @endsection
