@@ -10,13 +10,7 @@
             <p>we have:</p>
             @foreach($pizzas as $pizza)
             <div>
-                {{$loop->index}} - {{$pizza['type']}} - {{ $pizza['base'] }}
-                @if ($loop->first)
-                <span> - recommended pizza</span>
-                @endif
-                @if ($loop->last)
-                <span> - on sale</span>
-                @endif
+                {{ $pizza->name }} - {{$pizza->type}} - {{$pizza->base}}
             </div>
             @endforeach
     </div>
